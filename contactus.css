@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111111;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    width: 100%;
+    background-position: fixed;
+    background-size: cover;
+
+}
+.intro{
+    max-width: 75%;
+    margin: auto;
+}
+.intro p,h1{
+    margin: auto;
+    text-align: center;
+    font-weight: 900;
+    font-style: normal;
+    color: #ffffff;
+}
+.intro p{
+    font-size: 20px ;
+}
+.wrapper{
+    max-width: 75%;
+    margin: auto;
+}
+.wrapper p,h1{
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+.wrapper h1{
+    letter-spacing: 3px;
+}
+.wrapper p{
+    text-align: left;
+    margin-left: 10px;
+    
+    font-weight: bolder;
+    font-style: normal;
+    
+}
+.accordion{
+    background-color: #060000;
+    color: #ffffff;
+    cursor: pointer;   
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: 2px solid white;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900; 
+    font-size: 2vw;   
+}
+.accordion i{
+    font-size: 1.6rem;
+    border: none;
+}
+.accordion i:hover{
+    background-color: #313232;
+}
+.active,
+.accordion:hover{
+    background-color: #313232; 
+}
+.pannel{
+    padding: o 2rem 2.5rem 2rem;
+    overflow: hidden;
+    background-color: #100e0e;
+    display: none;
+}
+.pannel p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    background-color: #0f0e0e;
+    text-align: auto;
+}
+
+.faq{
+    border: 1px solid rgba(255, 253, 253, 0.971); 
+    margin: 10px 0;
+    
+}  
+.faq.active{
+    border: none;
+}
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+    margin: auto;
+    border: solid;
+}
+.search:focus-within{
+    box-shadow: 0 0 2px rgba(0,0,0,7.5);
+}
+.search-input{
+    font-size: 16px;
+    color: #333333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+.search-input::placeholder,
+.search-icon{
+    color: rgba(0, 0, 0, 0.7);
+
+}
+.contact{
+    max-width: 75%;
+    margin: auto;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.contact p,h1{
+    margin: auto;
+    text-align: center;
+   
+    font-weight: 400;
+    font-style: normal;
+   
+}
+.emailus{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.emailus p{
+    color: #f6f6f6;
+}
+.mailbox{
+    width: max-content;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffffff;
+    transition: box-shadow 0.25s;
+    border: solid 1px;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+
+}
+.search-input{
+    color: rgb(0, 0, 0);
+}
+.mailbox:focus-within{
+    box-shadow: 0 0 2px rgba(0,0,0,7.5);
+}
+.email form{
+    width: 60%;
+    height: auto;
+    float: left;
+   padding: 10px;
+}
+
+.information{
+    width: max-content;
+    padding: 10px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+    border: solid 1px;
+    width: 248px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: inline-block;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+}
+.message{
+    width: max-content;
+    display: inline-block;
+    padding: 10px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+    border: solid 1px;
+    margin: auto;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.submit{
+    width: max-content;
+    display: inline-block;
+    padding: 10px;
+    transition: box-shadow 0.25s;
+    border: solid 1px;
+    margin: auto;
+    width: 500px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+.submit p{
+    color: #000000;
+    
+    font-weight: 900;
+    font-style: italic;
+    background-color: white;
+}
+
+.phone p{
+    color: white;
+}
+.socialicons{
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+    border: none;
+    background-color: rgb(10, 10, 10);
+    border-radius: 35px;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    margin: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.socialicons a i{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+    border: none;
+    background-color: rgb(242, 242, 242) ;
+}
+.socialicons a:hover{
+    background-color: rgb(241, 241, 241); 
+    transition: 0.5s;
+}
+.socialicons a:hover i{
+    color: rgb(74, 90, 102);
+    transition: 0.5s;
+}
